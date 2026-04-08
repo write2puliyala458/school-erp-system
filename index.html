@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School ERP</title>
+</head>
+<body>
+
+<h2>School ERP System</h2>
+
+<h3>Add Student</h3>
+<input type="text" id="name" placeholder="Student Name">
+<button onclick="addStudent()">Add</button>
+
+<h3>Student List</h3>
+<ul id="list"></ul>
+
+<script>
+function addStudent() {
+  let name = document.getElementById("name").value;
+  let li = "<li>" + name + "</li>";
+  document.getElementById("list").innerHTML += li;
+}
+</script>
+
+</body>
+</html>
